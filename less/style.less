@@ -1,13 +1,47 @@
+/*=======================================================================================
+Variables
+=======================================================================================*/
+@twitter: #6ab3ed;
+@facebook: #4e6aa1;
+@pinterest: #be2532;
+@mail: #767676;
+@googleplus: #e75950;
+@whatsapp: #5be06e; 
+
+
+/*=======================================================================================
+General Styles
+=======================================================================================*/
+.transition{
+	transition:all 0.3s;
+	&:hover{
+		opacity:0.8;
+	}
+}
+img{
+	.transition;
+}
+/*=======================================================================================
+Site Header
+=======================================================================================*/
 .header{
 	padding:15px 0;
 	background: -webkit-linear-gradient(left, #1f9df4 0%,#011b70 100%); /* Chrome10-25,Safari5.1-6 */
 	.site-logo{
-
+		text-align:center;
+		@media screen and (min-width: 767px) {
+			text-align:left;
+		}
 	}
 
 	.site-menu-search{
 		.site-search {
+			text-align:center;
+			padding-top:15px;
+			@media screen and (min-width: 767px) {
+			text-align:right;
 			float:right;
+			}
 			input{
 				height:30px;
 			}
@@ -15,6 +49,10 @@
 		.main-menu{
 			clear:both;
 			padding-top:15px;
+			text-align:center;
+			@media screen and (min-width: 767px) {
+				text-align:left;
+			}
 			li.nav-item{
 				display:inline-block;
 				a{
@@ -35,20 +73,27 @@
 	.site-news-categories{
 		clear: both;
 		display: table;
-		float: right;
+
+		@media screen and (min-width: 1200px) {
+			float: right;
+			margin:25px 0 0 0;
+		}
 		cursor:pointer;
-		margin:25px 0 0 0;
+		margin:10px 0 0 0;
 		#dLabel{
 			display:block;
 			height:25px;
+			.transition;
 			span.menu-toggler{
 				height:2px;
+
 				background:white;
 				width:20px;
 
 				display:inline-block;
 				position:relative;
 				float:right;
+
 				&:after, &:before{
 					height:2px;
 					position:absolute; 
@@ -71,4 +116,99 @@
 			}	
 		}
 	}
+}
+
+/*=======================================================================================
+Site Body - Article
+=======================================================================================*/
+
+.socials-container{
+	.socials{
+		padding:10px 0 0px 0;
+		list-style:none;
+		 @media screen and (min-width: 1200px) {
+			padding:10px 0 30px 0;
+		}
+		li.social{
+			height:40px;
+			width:100%;
+			line-height:40px;
+			color:white;
+			font-size:18px;
+			text-align:center;
+			max-width:80px;
+			display:inline-block;
+			margin-bottom:3px;
+			transition:all 0.3s;
+			&:hover{
+				cursor:pointer;
+				opacity:0.7;
+			}
+			&-twitter{
+				background:@twitter;
+			}
+			&-facebook{
+				background:@facebook;
+			}
+			&-pinterest{
+				background:@pinterest;
+			}
+			&-mail{
+				background:@mail;
+			}
+			&-google-plus{
+				background:@googleplus;
+			}
+			&-whatsapp{
+				background:@whatsapp;
+			}
+		}
+	}
+}
+.news-container{
+	.news-title{
+		line-height:1.2;
+	}
+	padding:50px 0;
+	hr{
+		clear:both;
+		margin: 0 15px;
+		padding: 15px 0;
+	}
+	.article-info{
+		text-align:right;
+		padding-top:30px;
+	}
+	.article-body{
+		p{
+			line-height:1.8;
+			font-size:16px;
+			padding:20px 0;
+		}
+	}
+	.more-articles{
+		.more-articles-box{
+			padding-bottom:25px;
+			figure{ 
+			
+				position:relative;
+				figcaption{
+					position:absolute;
+					top:15px;
+					left:15px;
+					text-transform:uppercase;
+					color:white;
+					padding:7px;
+					background:#001963;
+				} 
+			}
+		}
+	}
+}
+
+
+.footer{
+	color:white;
+	padding:15px 0 10px 0;
+	background: -webkit-linear-gradient(left, #1f9df4 0%,#011b70 100%); /* Chrome10-25,Safari5.1-6 */
 }

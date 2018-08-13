@@ -7,18 +7,18 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css" >
 	<link rel="stylesheet" href="css/all.min.css" >
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css" media="screen" />
 </head>
 <body>
 
-<div class="header container-fluid">
-	
+	<div class="header container-fluid">
 		<div class="container">
-		    <div class=" site-logo col-sm-6 col-md-6 col-lg-3">
-		     	<a href="/">
-		     		<img src="img/logo.png" alt="">
-		     	</a>
-		    </div>
-		    <div class="site-menu-search col-sm-6 col-md-6 col-lg-6">
+			<div class=" site-logo col-sm-6 col-md-6 col-lg-3">
+				<a href="/">
+					<img src="img/logo.png" alt="">
+				</a>
+			</div>
+			<div class="site-menu-search col-sm-6 col-md-6 col-lg-6">
 				<div class="site-search float-right">
 					<input placeholder="Cautare" type="text">
 				</div>
@@ -31,34 +31,110 @@
 						<li class="nav-item"><a class="nav-link" href="#">Sport</a></li>
 					</ul>
 				</div>		     
-		    </div>
-		    <div class="col-sm-6 col-sm-6 col-sm-3">
-		    	<div class="weather">
-		    		<p>Vremea Bucuresti <i class="far fa-sun"></i> <span>32C</span> <span>32C</span></p>
-		    	</div>
-		    	<div class="site-news-categories">
-		    		<div class="dropdown">
-						  <div id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    <span class="menu-text">Toate Categoriile</span>
-						    <span class="menu-toggler"></span>
-						
-						  </div>
-						  <ul class="dropdown-menu" aria-labelledby="dLabel">
-						    <li><a href="">Stiinta</a></li>
-						    <li><a href="">Cultura</a></li>
-						    <li><a href="">Media</a></li>
-						    <li><a href="">Actual</a></li>
-						    <li><a href="">Lyfestyle</a></li>
-						  </ul>
-						</div>
-		    	</div>
-		   
-		</div>
-    
-  </div>
-</div>
+			</div>
+			<div class="col-sm-6 col-sm-6 col-sm-3">
+				<div class="visible-lg weather">
+					<p>Vremea Bucuresti <i class="far fa-sun"></i> <span>32C</span> <span>32C</span></p>
+				</div>
+				<div class="site-news-categories">
+					<div class="dropdown">
+						<div id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="menu-text">Toate Categoriile</span>
+							<span class="menu-toggler"></span>
 
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+						</div>
+						<ul class="dropdown-menu" aria-labelledby="dLabel">
+							<li><a href="">Stiinta</a></li>
+							<li><a href="">Cultura</a></li>
+							<li><a href="">Media</a></li>
+							<li><a href="">Actual</a></li>
+							<li><a href="">Lyfestyle</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- News Body -->
+	<div class="news-container container-fluid">
+		<div class="container">
+			<div class="col-sm-12 col-lg-8">
+				<h1 class="news-title">Consiliul National al PNL se reuneste sambata. La sedinta, asteptat si Klaus Iohannis</h1>
+				<div class="socials-container">
+					<ul class="socials">
+						<li data-toggle="modal" data-target="#myModal" class="social social-twitter"><i  class="fab fa-twitter"></i></li>
+						<li data-toggle="modal" data-target="#myModal" class="social social-facebook"><i  class="fab fa-facebook-f"></i></li>
+						<li data-toggle="modal" data-target="#myModal" class="social social-pinterest"><i  class="fab fa-pinterest-p"></i></li>
+						<li data-toggle="modal" data-target="#myModal" class="social social-mail"><i  class="fas fa-envelope-open"></i></li>
+						<li data-toggle="modal" data-target="#myModal" class="social social-google-plus"><i  class="fab fa-google"></i></li>
+						<li data-toggle="modal" data-target="#myModal" class="social social-whatsapp"><i  class="fab fa-whatsapp"></i></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="article-info col-sm-12 col-lg-4">
+				<p>Ultimul update: Sambata 04 August 2018 07:15</p>
+				<p>Data publicarii: Sambata 04 August 2018 07:03</p>
+				<p>Categorie: <a href="#">Politic</a></p>
+			</div>
+
+			<hr/>
+			<div class="article-body col-md-12 col-lg-8">
+				<a href="img/article-1-img.jpg" data-fancybox ><img src="img/article-1-img.jpg" class="img-responsive" alt="Klaus Iohannis Consiliul National PNL"></a>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis reprehenderit laborum tempore commodi possimus alias facere quasi similique incidunt, ex recusandae soluta odit magnam consequuntur nobis, dolorem dolore voluptate at nihil fuga pariatur ea quia esse. Corporis consectetur animi veniam maxime magni odit praesentium quo aut ipsa, ea quis sit quos ratione. Et ut neque ratione hic ipsum fugiat ab commodi modi laboriosam, magni quidem accusantium ullam officiis a! Sint?
+				</p>
+			</div>
+			<div class="col-md-12 col-lg-4 more-articles">
+				<div class="col-sm-12 col-md-6 more-articles-box">
+					<figure>
+						 <a href="img/vasile-blaga.jpg" data-fancybox ><img class="img-responsive" src="img/vasile-blaga.jpg" alt="Trulli" style="width:100%"></a>
+  						 <figcaption>Politic</figcaption>
+					</figure>
+					<h3>Vasile Blaga, despre reunificarea dreptei, sunt total de acord</h3>
+				</div>
+
+				<div class="col-sm-12 col-md-6 more-articles-box">
+				
+					<figure>
+						 <a href="img/klaus-iohannis.jpg" data-fancybox ><img class="img-responsive" src="img/klaus-iohannis.jpg" alt="Trulli" style="width:100%"></a>
+  						 <figcaption>Politic</figcaption>
+					</figure>
+					<h3>Klaus Iohannis face declarații la ora 18:00</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer container-fluid">
+		<p class="text-center">Copyright Sultana Ionut </p>
+	</footer>
+
+
+		<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Site in lucru!</h4>
+				  </div>
+				  <div class="modal-body">
+					<div class="alert alert-success" role="alert">Acest site este in dezvoltare, unele aspecte nu sunt functionale!</div>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Inchide</button>
+					
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 </body>
 </html>
