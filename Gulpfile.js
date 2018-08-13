@@ -20,7 +20,10 @@ gulp.task('less', function () {
 	.pipe(plumber())
 	.pipe(csso())
 	// Adds autoprefixer to css output
-	.pipe(postcss([ autoprefixer() ]))
+	.pipe(postcss([ autoprefixer({
+		 browsers: ['last 4 versions'],
+         cascade: false
+	}) ]))
     .pipe(gulp.dest('./css'));
 });
 
