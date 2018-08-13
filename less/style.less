@@ -26,7 +26,7 @@ Site Header
 =======================================================================================*/
 .header{
 	padding:15px 0;
-	background: -webkit-linear-gradient(to left, #1f9df4 0%,#011b70 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to left, #1f9df4 0%,#011b70 100%); /* Chrome10-25,Safari5.1-6 */
 	.site-logo{
 		text-align:center;
 		@media screen and (min-width: 767px) {
@@ -39,8 +39,8 @@ Site Header
 			text-align:center;
 			padding-top:15px;
 			@media screen and (min-width: 767px) {
-			text-align:right;
-			float:right;
+				text-align:right;
+				float:right;
 			}
 			input{
 				height:30px;
@@ -57,7 +57,7 @@ Site Header
 				display:inline-block;
 				a{
 					color:white;
-					&:hover{
+					&:hover, &:active, &:focus{
 						background:transparent;
 					}
 				}
@@ -110,9 +110,9 @@ Site Header
 				}
 			}
 			.menu-text{
-						float:right;
-						padding:0px 0 0 10px;
-						color:white;
+				float:right;
+				padding:0px 0 0 10px;
+				color:white;
 			}	
 		}
 	}
@@ -126,7 +126,7 @@ Site Body - Article
 	.socials{
 		padding:10px 0 0px 0;
 		list-style:none;
-		 @media screen and (min-width: 1200px) {
+		@media screen and (min-width: 1200px) {
 			padding:10px 0 30px 0;
 		}
 		li.social{
@@ -190,7 +190,7 @@ Site Body - Article
 		.more-articles-box{
 			padding-bottom:25px;
 			figure{ 
-			
+				
 				position:relative;
 				figcaption{
 					position:absolute; 
